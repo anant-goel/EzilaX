@@ -60,8 +60,9 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-# Pypi package Repo upgrade
-RUN pip3 install --upgrade pip setuptools
+# Copy Python Requirements to /root/EzilaX-SD
+RUN git clone -b shiken https://github.com/sadew451/EzilaX-SD /root/EzilaX-SD
+WORKDIR /root/Sophia
 
 #Copy config file to /root/EzilaXBot/EzilaXBot
 COPY ./EzilaXBot/sample_config.py ./EzilaXBot/config.py* /root/EzilaXBot/EzilaXBot/
