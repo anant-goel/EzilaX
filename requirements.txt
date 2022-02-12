@@ -60,7 +60,7 @@ heroku3
 telegraph
 youtube_search
 search_engine_parser
-sophia
+dateparser
 wget
 faker
 python-arq
