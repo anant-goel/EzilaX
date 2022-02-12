@@ -76,10 +76,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-🌺Hey there! My name is [Ezila]("https://telegra.ph/file/0316ea3d18fcd52a03194.jpg").
+🌺Hey there! My name is [Ezila]("https://telegra.ph/file/122c6f9823106b704da12.png").
 
 I can help manage your groups with useful features, feel free to add me to your groups!
-Project By @Ezila_Updates ❤
+Project By @PcGamesAllForFree ❤
 """
 
 buttons = [
@@ -94,9 +94,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🙋‍♀️ Ezila News", url=f"https://t.me/Ezila_Updates"),
+        InlineKeyboardButton(text="🙋‍♀️ Ezila News", url=f"https://t.me/PcGamesAllForFree"),
         InlineKeyboardButton(
-            text="💬 Support Group", url=f"https://t.me/Ezila_Support"
+            text="💬 Support Group", url=f"https://t.me/Anant_Goel"
         ),
     ],
     [
@@ -108,12 +108,12 @@ buttons = [
 HELP_STRINGS = """
 Hi.. I'm EzilaX 
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @Ezila_Updates 💓 [️️ ️](https://telegra.ph/file/0316ea3d18fcd52a03194.jpg) """
+Powered by @PcGamesAllForFree 💓 [️️ ️]https://telegra.ph/file/122c6f9823106b704da12.png) """
 
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Theekshana Official](t.me/theekshana_official) \
- Supporting isnt always financial! [Theekshana Support](t.me/Theekshana_support) \
+ You can support the project Of [Yash Official](t.me/fantasticyash) \
+ Supporting isnt always financial! [PcGamesAllForFree Support](t.me/PcGamesAllForFree \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -401,7 +401,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..😍 I'm *EzilaX*
-                 \nHere is the [Source Code](https://github.com/imtheekshana126/EzilaX) .""",
+                 \nHere is the [Source Code](t.me/PcGamesAllForFree .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -696,7 +696,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @Ezila_Updates")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @PcGamesAllForFree")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to @Ezila_Support, go and check!"
