@@ -1,4 +1,3 @@
-# We're using Debian Slim Buster image
 FROM python:3.8.5-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
@@ -64,12 +63,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/VegetaRobot
-RUN git clone -b shiken https://github.com/Ctzfamily/VegetaRobot /root/VegetaRobot
-WORKDIR /root/VegetaRobot
+# Copy Python Requirements to /root/EzilaX-SD
+RUN git clone -b shiken https://github.com/sadew451/EzilaX-SD /root/EzilaX-SD
+WORKDIR /root/Sophia
 
-#Copy config file to /root/VegetaRobot/VegetaRobot
-COPY ./EzilaX/sample_config.py ./EzilaX/config.py* /root/EzilaX/EzilaX/
+#Copy config file to /root/EzilaXBot/EzilaXBot
+COPY ./EzilaXBot/sample_config.py ./EzilaXBot/config.py* /root/EzilaXBot/EzilaXBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
