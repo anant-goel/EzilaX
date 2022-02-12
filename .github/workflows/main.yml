@@ -1,0 +1,52 @@
+name: Manually Deploy to Heroku
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          usedocker: true
+          docker_heroku_process_type: worker
+          stack: "container"
+          region: "eu"
+        env:
+          HD_AI_API_KEY: ${{secrets.AI_API_KEY}}
+          HD_ALLOW_EXCL: ${{secrets.ALLOW_EXCL}}
+          HD_API_ID: ${{secrets.VIEW_LINK}}
+          HD_API_HASH: ${{secrets.API_HASH}}
+          HD_API_OPENWEATHER: ${{secrets.API_OPENWEATHER}}
+          HD_BAN_STICKER: ${{secrets.BAN_STICKER}}
+          HD_BOT_ID: ${{secrets.BOT_ID}}
+          HD_CASH_API_KEY: ${{secrets.CASH_API_KEY}}
+          HD_DATABASE_URL: ${{secrets.DATABASE_URL}}
+          HD_DEL_CMDS: ${{secrets.DEL_CMDS}}
+          HD_DEMONS: ${{secrets.DEMONS}}
+          HD_DEV_USERS: ${{secrets.DEV_USERS}}
+          HD_DONATION_LINK: ${{secrets.DONATION_LINK}}
+          HD_DRAGONS: ${{secrets.DRAGONS}}
+          HD_ENV: ${{secrets.ENV}}
+          HD_EVENT_LOGS: ${{secrets.EVENT_LOGS}}
+          HD_HEROKU_APP_NAME: ${{secrets.HEROKU_APP_NAME}}
+          HD_JOIN_LOGGER: ${{secrets.JOIN_LOGGER}}
+          HD_MONGO_DB_URI: ${{secrets.MONGO_DB_URI}}
+          HD_OWNER_ID: ${{secrets.OWNER_ID}}
+          HD_OWNER_USERNAME: ${{secrets.OWNER_USERNAME}}
+          HD_SPAMWATCH_API: ${{secrets.SPAMWATCH_API}}
+          HD_STRICT_GBAN: ${{secrets.STRICT_GBAN}}
+          HD_SUPPORT_CHAT: ${{secrets.SUPPORT_CHAT}}
+          HD_TIGERS: ${{secrets.TIGERS}}
+          HD_TIME_API_KEY: ${{secrets.TIME_API_KEY}}
+          HD_TOKEN: ${{secrets.TOKEN}}
+          HD_URL: ${{secrets.URL}}
+          HD_WEBHOOK: ${{secrets.WEBHOOK}}
+          HD_WOLVES: ${{secrets.WOLVES}}
+          HD_HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
+
+
