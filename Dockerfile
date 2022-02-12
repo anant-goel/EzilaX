@@ -1,4 +1,4 @@
-FROM python:3.8.5-slim-buster
+FROM ubuntu:18.04
 
 ENV PIP_NO_CACHE_DIR 1
 
