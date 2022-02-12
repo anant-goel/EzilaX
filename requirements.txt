@@ -32,6 +32,13 @@ PyYAML>=5.3.1
 redis
 html2text
 pythonping
+ujson
+cachetools
+opencv-python-headless
+lyricsgenius
+apscheduler
+geopy
+
 html_telegraph_poster
 pytube
 youtube-search-python
