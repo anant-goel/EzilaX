@@ -63,10 +63,6 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/EzilaX-SD
-RUN git clone -b shiken https://github.com/Ctzfamily/ZeusXRobot /root/EzilaX-SD
-WORKDIR /root/Sophia
-
 #Copy config file to /root/EzilaXBot/EzilaXBot
 COPY ./EzilaXBot/sample_config.py ./EzilaXBot/config.py* /root/EzilaXBot/EzilaXBot/
 
