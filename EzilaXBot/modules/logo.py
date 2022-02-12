@@ -15,7 +15,7 @@ from telethon.tl.types import InputMessagesFilterPhotos
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
 
-TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg", 
+TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/122c6f9823106b704da12.png", 
                          "https://telegra.ph/file/8f9ff3d743e6707a61489.jpg", 
                          "https://telegra.ph/file/bfc97f4abc4bec6fe860d.jpg", 
                          "https://telegra.ph/file/5ef0f060023600ec08c19.jpg",
@@ -102,11 +102,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="gold", stroke_width=0, stroke_fill="gold")
     fname2 = "SophiaLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @EzilaXRobot 💞")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @fantasticyash 💞")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @Theekshana_Official, {e}')
+   await event.reply(f'Error Go to Help From  @Anant_Goel, {e}')
 
 
 
@@ -142,11 +142,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
     fname2 = "SophiaLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @SophiaSLBot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @fantasticyash")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @Dihan_Official, {e}')
+   await event.reply(f'Error Go to Help From @fantasticyash, {e}')
 
 
 
@@ -182,11 +182,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="red", stroke_width=0, stroke_fill="red")
     fname2 = "SophiaLogo.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @SophiaSLBot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @fantasticyash")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Go to Help From  @Dihan_Official, {e}')
+   await event.reply(f'Error Go to Help From  @fantasticyash, {e}')
 
 
 
