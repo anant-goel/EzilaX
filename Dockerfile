@@ -69,7 +69,7 @@ RUN git clone -b shiken https://github.com/Ctzfamily/VegetaRobot /root/VegetaRob
 WORKDIR /root/VegetaRobot
 
 #Copy config file to /root/VegetaRobot/VegetaRobot
-COPY ./VegetaRobot/sample_config.py ./VegetaRobot/config.py* /root/VegetaRobot/VegetaRobot/
+COPY ./EzilaX/sample_config.py ./EzilaX/config.py* /root/EzilaX/EzilaX/
 
 ENV PATH="/home/bot/bin:$PATH"
 
