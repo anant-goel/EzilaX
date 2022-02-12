@@ -61,3 +61,13 @@ telegraph
 youtube_search
 search_engine_parser
 sophia
+wget
+faker
+python-arq
+telegraph
+heroku3
+emoji-country-flag
+countryinfo
+fontTools
+html2text
+pymongo
